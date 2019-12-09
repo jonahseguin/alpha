@@ -1,0 +1,7 @@
+name: Alpha
+main: com.jonahseguin.godcomplex.alpha.Alpha
+version: ${project.version}
+api-version: 1.14.4
+author: Jonah Seguin (_onah / Shawckz)
+description: A test plugin written for God Complex.
+website: jonahseguin.com
