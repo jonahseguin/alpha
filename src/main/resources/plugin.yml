@@ -1,7 +1,15 @@
 name: Alpha
 main: com.jonahseguin.godcomplex.alpha.Alpha
 version: ${project.version}
-api-version: 1.14.4
 author: Jonah Seguin (_onah / Shawckz)
+api-version: 1.14
 description: A test plugin written for God Complex.
 website: jonahseguin.com
+
+commands:
+  cell:
+    aliases: ["cellphone", "phone"]
+    description: "Open your cell-phone"
+    usage: "/cellphone"
+    permission: "alpha.cellphone"
+    permission-message: "You don't have permission to use your cell-phone."

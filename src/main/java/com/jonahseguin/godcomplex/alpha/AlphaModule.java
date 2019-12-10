@@ -1,6 +1,8 @@
 package com.jonahseguin.godcomplex.alpha;
 
 import com.google.inject.AbstractModule;
+import com.jonahseguin.godcomplex.alpha.cellphone.CellphoneModule;
+import com.jonahseguin.godcomplex.alpha.player.PlayerModule;
 
 public class AlphaModule extends AbstractModule {
 
@@ -13,5 +15,7 @@ public class AlphaModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(Alpha.class).toInstance(alpha);
+        install(new PlayerModule());
+        install(new CellphoneModule());
     }
 }
